@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+body {
+    position: relative;
+    background: #000 url(background/sfondo.png) top center repeat-y
+}
+
+.header {
+    position: relative;
+    width: 976px;
+    height: 225px;
+    margin: 0 auto
+}
+
+#main {
+    position: relative;
+    display: block;
+    width: 950px;
+    margin: 0 auto;
+    padding: 10px 13px 0 13px;
+    background: url(background/bgmain.gif) top center repeat-y;
+    overflow-y: auto
+}
+
+#main>div.fatcol>div,
+#main>div.thincol>div,
+#main>div[class*="3"],
+#main>div[class|=maincontent]>div {
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    border: solid 4px #000;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-box-shadow: 0 5px 10px #000;
+    -khtml-box-shadow: 0 5px 10px #000;
+    -webkit-box-shadow: 0 5px 10px #000
+}
+
+div.podtop {
+    position: relative;
+    display: block;
+    height: 41px;
+    background: #02022e url(assets/banner.png) top left no-repeat
+}
+
+div.podtop>div {
+    position: absolute;
+    padding-right: 3px;
+    height: 100%;
+    right: 0;
+    background: inherit;
+    background-position: right 0
+}
+
+.podcontent {
+    padding: 21px 11px 11px 11px;
+    background-position: 0 0;
+    background-repeat: no-repeat
+}
+
+.podtop~.podcontent {
+    padding-top: 15px;
+    background-position: 0 -6px
+}
+
+.podcontent~.podcontent {
+    padding-top: 21px;
+    background-position: 0 0;
+    margin-top: -6px
+}
+
+div.podbot {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 6px;
+    right: 0;
+    left: 0;
+    border: solid 1px #28242c;
+    border-top: 0;
+    background: url(assets/pod/podbreaker.jpg) -1px 1px no-repeat
+}
+
+div.thincol>div {
+    float: left;
+    width: 302px !important;
+    background-image: url(assets/pod/pod.jpg) !important
+}
+
+div.thincol>div>.podcontent {
+    background-image: url(assets/pod/podbreak.jpg)
+}
+
+div.fatcol>div,
+div.maincontent>div {
+    float: right;
+    width: 622px;
+    background-image: url(assets/pod/podbg.jpg)
+}
+
+div.fatcol>div>.podcontent,
+div.maincontent>div>.podcontent {
+    background-image: url(assets/pod/podbreaker2.jpg)
+}
+
+div.maincontent-wide>div {
+    width: 942px;
+    background-image: url(assets/pod/pod2.jpg)
+}
+
+div.maincontent-wide>div>.podcontent {
+    background-image: url(assets/pod/pod-smezzato.jpg)
+}
+
+div.pop3 {
+    min-width: 600px;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+div.pop3 div.podtop div {
+    width: 10%
+}
+
+.podcontent:first-child {
+    padding-top: 12px;
+    background-position: 0 -10px
+}
+
+div.podtop div a[class] {
+    height: 15px;
+    width: 15px;
+    padding: 5px
+}
+
+div.podtop h2>img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 8px
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+td>div>a {
+    display: table-cell;
+    height: 35px;
+    width: 135px;
+    padding-left: 40px;
+    padding-right: 5px;
+    vertical-align: middle;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: 5px 5px
+}
+
+td>div a:hover {
+    background-color: #4f280e
+}
+
+table[class$=list] td:first-child>span:hover {
+    background-position: 0 -17px
+}
+
+.podcontent>a>img {
+    margin: 5px 5px 5px 5px
+}
+
+.podcontent>img:first-child {
+    margin: 5px
+}
+
+div[class~=optionlinks] {
+    height: 35px
+}
+
+div[class~=optionlinks]>a {
+    margin-top: 5px
+}
+
+dt.genres~dd {
+    background-position: 4px -222px
+}
+
+dt.tags~dd {
+    background-position: 5px -200px
+}
+
+embed {
+    outline: 0
+}
+
+.image>a>img {
+    display: block;
+    margin: 5px auto 10px auto !important
+}
+
+dl.contentdata {
+    position: relative;
+    height: 65px
+}
+
+dl.contentdata dt {
+    display: none
+}
+
+dl.contentdata dt[class]+dd {
+    background: 0 0 !important;
+    padding-left: 6px !important
+}
+
+dl.contentdata dt[class]~dd {
+    float: left;
+    padding: 1px 0 1px 12px;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 9px;
+    font-weight: 700;
+    background: url(assets/pattume/icons.png) 5px -222px no-repeat
+}
+
+dl.contentdata dt.tags~dd {
+    font-size: 10px;
+    font-weight: 400;
+    background-position: 5px -200px
+}
+
+dl.contentdata dt.tags {
+    display: block !important;
+    float: left;
+    clear: left;
+    height: 15px;
+    margin-top: 5px;
+    color: #7d7575;
+    margin-left: 6px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 9px
+}
+
+div.maincontent-wide dl.contentdata {
+    height: 35px
+}
+
+dd[class*=level] {
+    float: left;
+    width: 220px;
+    padding-left: 70px;
+    height: 65px;
+    margin: 5px 5px 0 5px
+}
+
+.fatcol dd[class|=level],
+.fatcol dd[class|=whistle] {
+    margin-bottom: 5px !important;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #2a2526
+}
+
+dd[class*=level] dt:first-child {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    margin: 0 10px 10px -70px;
+    padding: 0;
+    text-indent: -60em;
+    overflow: hidden
+}
+
+.thincol dd[class*="-a"],
+dd[class*="-a"] {
+    background-position: 0 0
+}
+
+.thincol dd[class*="-g"],
+dd[class*="-g"] {
+    background-position: 0 -75px
+}
+
+.thincol dd[class$="-d1"],
+dd[class$="-d1"] {
+    background-position: 0 -150px
+}
+
+.thincol dd[class*="-m"],
+dd[class*="-m"] {
+    background-position: 0 -225px
+}
+
+.thincol dd[class*="-i"],
+dd[class*="-i"] {
+    background-position: 0 -300px
+}
+
+.thincol dd[class$="-d2"],
+dd[class$="-d2"] {
+    background-position: 0 -375px
+}
+
+.thincol dd[class$=mod],
+dd[class$=mod] {
+    background-position: 0 -450px
+}
+
+dd[class|=whistle] dt+dt {
+    margin-top: 15px;
+    width: 180px !important
+}
+
+dd[class|=whistle] dt+dd {
+    text-indent: 15px
+}
+
+dd[class|=whistle] dd a {
+    margin-top: -27px !important
+}
+
+.thincol dd[class*=level] {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 5px 16px;
+    padding: 0
+}
+
+.thincol dd[class*=level] div {
+    display: block;
+    width: 60px;
+    height: 60px
+}
+
+div.podtop:hover>div>ul {
+    opacity: 1
+}
+
+[class^=post] dl dd>a:first-child {
+    display: block;
+    position: absolute;
+    margin-left: -70px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -600em
+}
+
+div.tags {
+    padding: 20px 16px 16px 16px !important;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: justify
+}
+
+div[class|=browse] a[href] {
+    background-color: #4f280e
+}
+
+div[class|=browse] a[href]:hover {
+    color: #1b1717;
+    cursor: pointer;
+    background-position: -300px 0
+}
+
+div[class|=browse] a[class] {
+    position: relative;
+    padding: 5px 0 5px 40px;
+    font-size: 1.6em;
+    line-height: 1.9em
+}
+
+[class*=simple] {
+    margin: 5px;
+    font-size: 1.2em;
+    line-height: 18px;
+    font-weight: 700;
+    color: #c9bebe
+}
+
+@font-face {
+    font-family: headerfont;
+    src: url(fonts/pakenham.otf) format("truetype")
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    font-size: 62.5%;
+    color: #c9bebe
+}
+
+a {
+    outline: 0;
+    text-decoration: none
+}
+
+a,
+a:active {
+    color: #eeb211
+}
+
+a:visited {
+    color: #b96f10
+}
+
+a:hover {
+    color: #fff;
+    cursor: pointer
+}
+
+h3 {
+    font-size: 1.8em
+}
+
+h3 a,
+h3 a:visited {
+    color: #c9bebe
+}
+
+.podcontent>h3 {
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 700;
+    display: block;
+    background: transparent url(assets/pod/podstripe.gif) center bottom no-repeat !important
+}
+
+h4 {
+    font-size: 1.4em;
+    color: #7d7575;
+    font-style: italic;
+    font-weight: 700
+}
+
+.podcontent>h4 {
+    padding: 2px 5px 0 5px
+}
+
+h4 a {
+    font-size: 12px;
+    font-style: normal
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #7d7575
+}
+
+h6 {
+    font-size: 1em;
+    color: #7d7575;
+    font-style: italic;
+    font-weight: 400
+}
+
+h6:before {
+    content: "("
+}
+
+h6:after {
+    content: ")"
+}
+
+div.podtop>img {
+    height: 33px;
+    margin: 5px;
+    overflow: hidden;
+    color: #fff
+}
+
+div.podtop>h2 {
+    float: left;
+    height: 31px;
+    overflow: hidden;
+    margin: 5px;
+    color: #fff;
+    font-size: 2em;
+    font-size-adjust: .4;
+    line-height: 1.1em;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-repeat: no-repeat
+}
+
+.podcontent>p {
+    margin: 5px;
+    font-size: 1.2em;
+    line-height: 1.4em
+}
+
+.podcontent>p+p {
+    margin-top: 10px
+}
+
+div.podcontent>p>a {
+    font-weight: 700
+}
+
+div.podcontent>p>a:hover {
+    color: #fff
+}
+
+div.podcontent>p>a:active {
+    color: #eeb211
+}
+
+div.podtop div a {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 2.1em
+}
+
+dd {
+    color: #eeb211
+}
+
+div.podtop>.links {
+    background-position: 0 -155px
+}
+
+div.podtop>.icon {
+    background-position: 0 -868px
+}
+
+div.podtop>.download {
+    background-position: 0 -1240px
+}
+
+div.podtop a.left {
+    margin-left: 25px !important
+}
+
+#footer,
+.header {
+    display: none
+}
+
+div.podtop>div>a {
+    display: none
+}
+
+#footer {
+    position: relative;
+    width: 976px;
+    height: 685px;
+    margin: 0 auto;
+    color: #c9bebe;
+}
